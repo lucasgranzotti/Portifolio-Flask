@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+    <div class="container">
+        <section class="profile">
+            <img src="{{ url_for('static', filename='images/my-photo.jpeg') }}" alt="Minha Foto" class="profile-pic">
+        </section>
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Lucas Granzotti e sou um estudante na área de Tecnologia da Informação.</p>
+            <p>Durante o periodo da minha formação, estou aprendendo atrabalhar com várias tecnologias diferentes, incluindo programação em Python, desenvolvimento web com HTML, CSS, JavaScript, entre outros, e fundamentos de banco de dados. </p>
+
+        </section>
+        <section>
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>1º Projeto: Desenvolver Sistema de Arduino</h3>
+                <p>Desenvolvi um projeto da criação de um carro e automatizei pelo arduino.</p>
+            </div>
+            <div class="project">
+                <h3>2º Projeto: Robótica e Sistema Smart Embarcados IOT</h3>
+                <p>Criei um projeto de uma casa iteligente, controlada via bluetooth.</p>
+            </div>
+            <div class="project">
+                <h3>3º Projeto: API de Solo</h3>
+                <p>Criei um projeto de medição de temperatura e condição do solo.</p>
+            </div>
+            <div class="project">
+                <h3>4º Projeto: Registro de Usuários</h3>
+                <p>Desenvolvi uma criação de registros de usuários.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>E-mail:  lucg1404@gmail.com</p>
+            <p>Github: <a href="https://github.com/lucasgranzotti" target="_blank">LucasGranzotti</a></p>
+        </section>
+    </div>
+</body>
+</html>
